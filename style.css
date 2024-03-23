@@ -12,7 +12,6 @@ body {
     padding: 20px;
 }
 
-
 #display {
     width: calc(100% - 10px);
     height: 50px;
@@ -50,10 +49,4 @@ button {
 .clear {
     background-color: #ff4d4d;
     color: #fff;
-}
-
-.p {
-	align-content: center;
-	justify-content: center;
-
 }
