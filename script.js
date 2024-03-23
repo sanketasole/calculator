@@ -1,20 +1,18 @@
-let displayValue = '';
-
 function appendToDisplay(value) {
-    displayValue += value;
-    document.getElementById('display').value = displayValue;
+    document.getElementById('display').value += value;
 }
 
 function clearDisplay() {
-    displayValue = '';
     document.getElementById('display').value = '';
 }
 
-function calculateResult() {
+function calculate() {
+    let expression = document.getElementById('display').value;
+    let result;
     try {
-        displayValue = eval(displayValue);
-        document.getElementById('display').value = displayValue;
+        result = eval(expression);
     } catch (error) {
-        document.getElementById('display').value = 'Error';
+        result = 'Error';
     }
+    document.getElementById('display').value = result;
 }
